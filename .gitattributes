@@ -1,1 +1,2 @@
-.rb linguist-language=c++
+*.cc linguist-language=cpp
+*.h linguist-language=cpp
