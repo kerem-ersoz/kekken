@@ -1,5 +1,5 @@
 #OBJS specifies which files to compile as part of the project
-OBJS = lp2.cc Dot.cc object.cc
+OBJS = kekken.cc timer.cc object.cc
 
 #CC specifies which compiler we're using
 CC = g++

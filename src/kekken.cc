@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <string>
 #include <iostream>
-#include "lp2.h"
+#include "kekken.h"
 
 Menu SPLASH_SCREEN, CHARACTER_SELECT, STAGE_SELECT, PLAY_GAME;
 Menu* currentMenu = &SPLASH_SCREEN;

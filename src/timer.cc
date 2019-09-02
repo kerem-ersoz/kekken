@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string>
 #include <iostream>
-#include "lp2.h"
+#include "kekken.h"
 
 LTimer::LTimer(){
     //Initialize the variables
