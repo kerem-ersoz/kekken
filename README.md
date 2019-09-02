@@ -18,8 +18,8 @@ SDL_ttf: https://www.libsdl.org/projects/SDL_ttf/
 2. Copy the SDL_image and SDL_ttf headers from their respective framework folders into /Library/Frameworks/SDL2.framework/Headers. 
 3. Use ```make mac``` to compile. 
 
-### Alternatively:
-You can include all frameworks neatly using Xcode and build it there. 
+### Alternatively, using xcode:
+You can include all frameworks without having to move headers and compile. 
 
 ## Windows:
 Coming soon!
