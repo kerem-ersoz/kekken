@@ -1,7 +1,7 @@
 #pragma once
-#include <SDL2/SDL.h>
-#include <SDL2_ttf/SDL_ttf.h>
-#include <SDL2_image/SDL_image.h>
+#include <SDL.h>
+#include <SDL_ttf.h>
+#include <SDL_image.h>
 #include <stdio.h>
 #include <string>
 #include <sstream>
@@ -109,6 +109,7 @@ const int SCREEN_WIDTH = 800;
 const int SCREEN_HEIGHT = 600;
 const int SPRITE_WIDTH = 71*1.7;
 const int SPRITE_HEIGHT = 70*1.7;
+const int MAXFPS = 500; 
 static Character* headNode = NULL;
 static Object GROUND = Object(0, SCREEN_HEIGHT, SCREEN_WIDTH, 10);
 static Character CHAR_1 = Character(1);

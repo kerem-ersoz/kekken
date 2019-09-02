@@ -1,7 +1,8 @@
-#include <SDL2/SDL.h>
-#include <SDL2_ttf/SDL_ttf.h>
-#include <SDL2_image/SDL_image.h>
+#include <SDL.h>
+#include <SDL_image.h>
+#include <SDL_ttf.h>
 #include <stdio.h>
+#include <unistd.h>
 #include <string>
 #include <iostream>
 #include "lp2.h"
@@ -13,6 +14,8 @@ SDL_Renderer* gRenderer = NULL;
 LTimer stepTimer;
 //Event handler
 SDL_Event e;
+int frame =0; 
+LTimer fps;
 
 ////////////////////////////////////////
 
@@ -83,6 +86,7 @@ bool init(){
             }
 		}
 	}
+	chdir("..");
 	return success;
 }
 
@@ -633,6 +637,8 @@ int playGame(SDL_Event e){
 	//Handle events on queue
 	while(1){
 		SDL_PollEvent(&e);
+		//timer for fps lock
+		fps.start();
 		//User requests quit
 		if(e.type == SDL_QUIT){
 			exit(1);
@@ -643,6 +649,10 @@ int playGame(SDL_Event e){
 				state = KILL;
 				break; 
 			}
+		}
+		if(fps.getTicks() < 1000 / MAXFPS){
+			//do not do anything
+			SDL_Delay((1000 / MAXFPS) - fps.getTicks());
 		}
 		//Calculate time step for movement
 		float timestep = stepTimer.getTicks() / 1000.f;
