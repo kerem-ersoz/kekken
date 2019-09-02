@@ -4,9 +4,9 @@ OBJS = kekken.cc timer.cc object.cc
 #CC specifies which compiler we're using
 CC = g++
 
-MAC_COMPILER_FLAGS = -Wall -g -std=c++11 -I /Library/Frameworks/SDL2.framework/Headers
+MAC_COMPILER_FLAGS = -Wall -g -std=c++11 -I /Library/Frameworks/SDL2.framework/Headers /Library/Frameworks/SDL2_image.framework/Headers /Library/Frameworks/SDL2_ttf.framework/Headers
 
-MAC_LINKER_FLAGS = -lSDL2 -lSDL2_image -lSDL2_ttf -framework SDL2 -F /Library/Frameworks
+MAC_LINKER_FLAGS = -lSDL2 -lSDL2_image -lSDL2_ttf -framework SDL2  -F /Library/Frameworks
 
 COMPILER_FLAGS = -Wall -g -std=c++11 -I /usr/include/SDL2/
 
