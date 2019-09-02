@@ -19,7 +19,7 @@ SDL_ttf: https://www.libsdl.org/projects/SDL_ttf/
 3. Use ```make mac``` to compile. 
 
 ### Alternatively, using xcode:
-You can include all frameworks without having to move headers and compile. 
+You can copy the .framework files into the source directory and just compile. 
 
 ## Windows:
 Coming soon!
