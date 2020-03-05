@@ -8,7 +8,7 @@ MAC_COMPILER_FLAGS = -Wall -g -std=c++11 -I /Library/Frameworks/SDL2.framework/H
 
 MAC_LINKER_FLAGS = -lSDL2 -lSDL2_image -lSDL2_ttf -framework SDL2  -F /Library/Frameworks
 
-COMPILER_FLAGS = -Wall -g -std=c++11 -I /usr/include/SDL2/
+COMPILER_FLAGS = -Wall -g -std=c++11 -I /usr/include/SDL2
 
 LINKER_FLAGS = -lSDL2 -lSDL2_image -lSDL2_ttf
 
